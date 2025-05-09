@@ -22,15 +22,13 @@ export default function Home() {
 
   return (
     <div className="page-container">
-      <div className="page-content">
-        <h1 className="page-title">{getTranslation('welcome', language)}</h1>
-        <div className="page-text">
-          <h2>{content[language].greeting}</h2>
-          <p>{content[language].intro1}</p>
-          <p>{content[language].intro2}</p>
-          <p>{content[language].intro3}</p>
-        </div>
-      </div>
+      <h1 className="page-title">{getTranslation('welcome', language)}</h1>
+      <section className="page-content">
+        <h2>{content[language].greeting}</h2>
+        <p>{content[language].intro1}</p>
+        <p>{content[language].intro2}</p>
+        <p>{content[language].intro3}</p>
+      </section>
     </div>
   );
 } 

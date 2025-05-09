@@ -3,7 +3,8 @@ import {
   BrowserRouter,
   Routes,
   Route,
-  useLocation
+  useLocation,
+  Navigate
 } from 'react-router-dom';
 import { LanguageProvider, useLanguage } from './contexts/LanguageContext';
 import LanguageToggle from './components/LanguageToggle';
@@ -57,6 +58,7 @@ function App() {
               <Route path="/publications" element={<Publications />} />
               <Route path="/activities" element={<Activities />} />
               <Route path="/contact" element={<Contact />} />
+              <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>
           </div>
           <Footer />

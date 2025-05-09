@@ -1,6 +1,7 @@
 import React from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
 import { getTranslation } from '../utils/translations';
+import './Home.css';
 
 export default function Home() {
   const { language } = useLanguage();
@@ -21,14 +22,16 @@ export default function Home() {
   };
 
   return (
-    <header className="App-header">
-      <h1>{getTranslation('welcome', language)}</h1>
-      <section>
-        <p>{content[language].greeting}</p>
-        <p>{content[language].intro1}</p>
-        <p>{content[language].intro2}</p>
-        <p>{content[language].intro3}</p>
-      </section>
-    </header>
+    <div className="home-container">
+      <div className="home-content">
+        <h1 className="home-title">{getTranslation('welcome', language)}</h1>
+        <div className="home-text">
+          <h2>{content[language].greeting}</h2>
+          <p>{content[language].intro1}</p>
+          <p>{content[language].intro2}</p>
+          <p>{content[language].intro3}</p>
+        </div>
+      </div>
+    </div>
   );
 } 

@@ -27,6 +27,51 @@ html, body {
   box-sizing: border-box;
 }
 
+.page-container {
+  min-height: calc(100vh - 200px);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem;
+  background-color: transparent;
+}
+
+.page-content {
+  max-width: 800px;
+  width: 100%;
+  background-color: white;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(91,110,225,0.10);
+}
+
+.page-title {
+  font-size: 2.5rem;
+  color: #1a1a2a;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+.page-text {
+  line-height: 1.8;
+}
+
+.page-text h2 {
+  font-size: 1.8rem;
+  color: #5b6ee1;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.page-text p {
+  font-size: 1.1rem;
+  color: #23243a;
+  margin-bottom: 1.2rem;
+  text-align: justify;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -210,6 +255,26 @@ a:hover {
   
   .main-content {
     padding: 1rem;
+  }
+  
+  .page-container {
+    padding: 1rem;
+  }
+  
+  .page-content {
+    padding: 1.5rem;
+  }
+  
+  .page-title {
+    font-size: 2rem;
+  }
+  
+  .page-text h2 {
+    font-size: 1.5rem;
+  }
+  
+  .page-text p {
+    font-size: 1rem;
   }
 }
 

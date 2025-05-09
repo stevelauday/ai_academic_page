@@ -43,7 +43,7 @@ const DynamicTitle = () => {
 function App() {
   return (
     <LanguageProvider>
-      <Router>
+      <BrowserRouter basename="/ai_academic_page">
         <div className="App">
           <DynamicTitle />
           <LanguageToggle />
@@ -61,7 +61,7 @@ function App() {
           </div>
           <Footer />
         </div>
-      </Router>
+      </BrowserRouter>
     </LanguageProvider>
   );
 }
